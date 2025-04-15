@@ -16,17 +16,17 @@ public class TeamchatCommand extends Command {
     }
 
     public void execute(CommandSender sender, String[] args) {
+        WarkingUser user = new WarkingUser(((ProxiedPlayer) sender).getUniqueId());
+        WarkingGroup group = new WarkingGroup(user.UserGroup);
+        String prefix = group.getGroupName();
+        String suffix = user.UserName;
+
         if (sender instanceof ProxiedPlayer) {
             ProxiedPlayer player = (ProxiedPlayer)sender;
             if (args.length == 0) {
-                player.sendMessage("§4T§7c§r §e/teamchat [Nachricht an das Team]");
+                player.sendMessage("§4Team §8» " + prefix.replace("&", "§") + " " + suffix + ((ProxiedPlayer) sender).getServer().getInfo().getName());
                 return;
             }
-
-            WarkingUser user = new WarkingUser(((ProxiedPlayer) sender).getUniqueId());
-            WarkingGroup group = new WarkingGroup(user.UserGroup);
-                            String prefix = group.getGroupName();
-                            String suffix = user.UserName;
             StringBuilder msgBuilder = new StringBuilder();
             msgBuilder.append("§8[§aTC§8] §e").append(prefix.replace("&", "§") + " " + suffix + " §8| " + " §a➙  ");
             String[] var5 = args;
