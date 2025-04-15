@@ -59,18 +59,17 @@
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
         <repository>
-            <id>papermc-repo</id>
+            <id>papermc</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>net.md_5.bungee</groupId>
-            <artifactId>waterfall</artifactId>
-            <version>1.21-579</version>
-            <scope>system</scope>
-            <systemPath>D:\intellj\core + config\waterfall-1.21-579.jar</systemPath>
+            <groupId>io.github.waterfallmc</groupId>
+            <artifactId>waterfall-api</artifactId>
+            <version>1.21-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
