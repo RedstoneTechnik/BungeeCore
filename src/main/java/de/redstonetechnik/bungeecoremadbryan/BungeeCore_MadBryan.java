@@ -80,7 +80,7 @@ public final class BungeeCore_MadBryan extends Plugin {
                 this.config.set("WartungsModus.Status", true);
                 String[] cmd = new String[] { "l", "hub", "lobby" };
                 this.config.set("servers.HunjyLobby.commands", cmd);
-                String[] bcs = new String[] { "Standardmitteilung!" };
+                String[] bcs = new String[] { "Standardmitteilung!234" };
                 this.config.set("broadcasts", bcs);
                 this.config.set("servers.HunjyLobby.permission", "bungeecore.server.user");
                 ConfigurationProvider.getProvider(YamlConfiguration.class).save(this.config, configFile);
