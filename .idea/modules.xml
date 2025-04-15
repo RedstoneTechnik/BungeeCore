@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BungeeCore.iml" filepath="$PROJECT_DIR$/.idea/BungeeCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BungeeCore-MadBryan.iml" filepath="$PROJECT_DIR$/BungeeCore-MadBryan.iml" />
     </modules>
   </component>
 </project>
