@@ -1,0 +1,4 @@
+name: BungeeCore-MadBryan
+author: RedstoneTechnik
+version: '${project.version}'
+main: de.redstonetechnik.bungeecoremadbryan.BungeeCore_MadBryan
